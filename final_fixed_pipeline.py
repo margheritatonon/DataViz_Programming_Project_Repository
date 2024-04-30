@@ -290,7 +290,7 @@ class RemoveTickmark(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget(
-            "clean_malasaña1.xlsx"
+            "clean_malasaña.xlsx"
         )  # this must be changed everytime it is run to match the city in which you are running
 
 
