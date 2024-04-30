@@ -290,12 +290,12 @@ class RemoveTickmark(luigi.Task):
 
     def output(self):
         return luigi.LocalTarget(
-            "clean_mallorca.xlsx"
+            "clean_pozuelo.xlsx"
         )  # this must be changed everytime it is run to match the city in which you are running
 
 
 if __name__ == "__main__":
-    input_path = "datasets/mallorca.xlsx"  # you must also update the input path to match the file you want to run
+    input_path = "datasets/pozuelo.xlsx"  # you must also update the input path to match the file you want to run
     # Specify the input path when creating an instance of RemoveTickmark
     remove_tickmark_task = RemoveTickmark(input_path=input_path)
     luigi.build([remove_tickmark_task], local_scheduler=True)
