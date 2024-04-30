@@ -295,7 +295,7 @@ class RemoveTickmark(luigi.Task):
 
 
 if __name__ == "__main__":
-    input_path = "/Users/oliviacampsie/Computer_Programming2/DataVis+Comp2/malasaña.xlsx"  # you must also update the input path to match the file you want to run
+    input_path = "datasets/malasaña.xlsx"  # you must also update the input path to match the file you want to run
     # Specify the input path when creating an instance of RemoveTickmark
     remove_tickmark_task = RemoveTickmark(input_path=input_path)
     luigi.build([remove_tickmark_task], local_scheduler=True)
